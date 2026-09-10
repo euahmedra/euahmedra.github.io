@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东昌路小学-校园概况与招生入学信息指南</title>
+    <meta name="description" content="东昌路小学是一所注重素质教育与全面发展的公办小学。本页提供学校简介、校园环境、招生政策、课程特色及家长常见问题解答，帮助您全面了解东昌路小学。" />
+    <meta name="keywords" content="东昌路小学,小学招生,学区划分,入学条件,学校简介,校园环境,素质教育,课程设置" />
+    <style>
+        /* ===== 基础重置与全局 ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== 顶部信息条 ===== */
+        .top-bar {
+            background-color: #2d6a4f;
+            color: #e9f5ef;
+            font-size: 14px;
+            padding: 8px 0;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .top-bar span {
+            margin-right: 18px;
+        }
+        .top-bar .notice {
+            font-weight: 500;
+        }
+
+        /* ===== 页眉区 ===== */
+        .site-header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            padding: 18px 0;
+            border-bottom: 3px solid #2d6a4f;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(145deg, #40916c, #2d6a4f);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(45,106,79,0.2);
+        }
+        .logo-text h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1b4332;
+            letter-spacing: 1px;
+        }
+        .logo-text p {
+            font-size: 13px;
+            color: #52796f;
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        .header-contact {
+            background: #f0f7f4;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: #1b4332;
+            border: 1px solid #b7d7c8;
+        }
+        .header-contact i {
+            font-style: normal;
+            margin-right: 6px;
+        }
+
+        /* ===== 导航 ===== */
+        .main-nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5ece9;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .main-nav .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            display: block;
+            padding: 14px 26px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: all .2s ease;
+            border-bottom: 3px solid transparent;
+        }
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #2d6a4f;
+            border-bottom-color: #2d6a4f;
+            background-color: #f6fbf9;
+        }
+
+        /* ===== 首屏横幅 ===== */
+        .hero {
+            background: linear-gradient(135deg, #d8f3dc 0%, #b7e4c7 100%);
+            padding: 50px 0;
+            margin-bottom: 40px;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .hero-text {
+            flex: 1 1 400px;
+        }
+        .hero-text .tagline {
+            background-color: #1b4332;
+            color: #fff;
+            display: inline-block;
+            padding: 4px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
+        .hero-text h2 {
+            font-size: 36px;
+            color: #1b4332;
+            margin-bottom: 16px;
+            line-height: 1.3;
+            font-weight: 700;
+        }
+        .hero-text p {
+            font-size: 17px;
+            color: #2d6a4f;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .hero-buttons a {
+            display: inline-block;
+            background-color: #2d6a4f;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-right: 12px;
+            transition: background .2s;
+            box-shadow: 0 4px 12px rgba(45,106,79,0.3);
+        }
+        .hero-buttons a.outline {
+            background: transparent;
+            border: 2px solid #2d6a4f;
+            color: #2d6a4f;
+            box-shadow: none;
+        }
+        .hero-buttons a:hover {
+            background-color: #1b4332;
+            color: #fff;
+        }
+        .hero-buttons a.outline:hover {
+            background-color: #2d6a4f;
+            color: #fff;
+        }
+        .hero-image {
+            flex: 0 0 260px;
+            height: 200px;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 16px 30px rgba(27,67,50,0.15);
+            background-image: linear-gradient(120deg, #f0f7f4 0%, #d8f3dc 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #2d6a4f;
+            font-weight: 500;
+            padding: 20px;
+            text-align: center;
+            border: 2px dashed #95d5b2;
+        }
+
+        /* ===== 信息快速通道 ===== */
+        .quick-panel {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .quick-card {
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 24px 18px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            border-top: 4px solid #52b788;
+            transition: transform .2s;
+        }
+        .quick-card:nth-child(2) {
+            border-top-color: #40916c;
+        }
+        .quick-card:nth-child(3) {
+            border-top-color: #2d6a4f;
+        }
+        .quick-card:nth-child(4) {
+            border-top-color: #1b4332;
+        }
+        .quick-card:hover {
+            transform: translateY(-4px);
+        }
+        .quick-card .icon {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+        .quick-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #1b4332;
+        }
+        .quick-card p {
+            font-size: 14px;
+            color: #52796f;
+        }
+
+        /* ===== 内容区通用 ===== */
+        .section-title {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 12px;
+            color: #1b4332;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: #52b788;
+            border-radius: 3px;
+        }
+        .section-sub {
+            text-align: center;
+            color: #52796f;
+            margin-bottom: 36px;
+            font-size: 15px;
+        }
+
+        .content-section {
+            margin-bottom: 50px;
+        }
+
+        /* ===== 校园简介 ===== */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        .intro-text p {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        .intro-highlight {
+            background-color: #e9f5ef;
+            border-left: 5px solid #2d6a4f;
+            padding: 18px 22px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+        .intro-stats {
+            display: flex;
+            justify-content: space-around;
+            background: #fff;
+            border-radius: 20px;
+            padding: 25px 10px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-item strong {
+            font-size: 30px;
+            color: #2d6a4f;
+            display: block;
+        }
+        .stat-item span {
+            font-size: 14px;
+            color: #52796f;
+        }
+
+        /* ===== 校园环境 ===== */
+        .env-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .env-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.03);
+        }
+        .env-card .emoji {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+        .env-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #1b4332;
+        }
+        .env-card p {
+            font-size: 14px;
+            color: #3f5f54;
+        }
+
+        /* ===== 特色课程 ===== */
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .course-item {
+            background: #f0f7f4;
+            border-radius: 14px;
+            padding: 20px;
+            border: 1px solid #cfe8db;
+        }
+        .course-item h4 {
+            color: #1b4332;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .course-item p {
+            font-size: 14px;
+            color: #2d5a4a;
+        }
+
+        /* ===== 招生信息面板 ===== */
+        .enroll-wrap {
+            background: #fff;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .enroll-info h3 {
+            font-size: 20px;
+            color: #1b4332;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #d8f3dc;
+            padding-bottom: 8px;
+        }
+        .enroll-info ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f7f4;
+            font-size: 15px;
+            display: flex;
+            align-items: baseline;
+        }
+        .enroll-info ul li::before {
+            content: "•";
+            color: #2d6a4f;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 20px;
+        }
+        .enroll-tips {
+            background: #f6fbf9;
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 18px;
+        }
+        .enroll-tips strong {
+            color: #1b4332;
+        }
+
+        /* ===== 常见问题FAQ ===== */
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 18px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            background: #f0f7f4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #1b4332;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            color: #2d6a4f;
+            transition: transform 0.2s;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .faq-item.active .faq-answer {
+            padding: 0 24px 18px;
+            max-height: 500px;
+        }
+        .faq-answer p {
+            font-size: 15px;
+            color: #2d3e38;
+            padding-top: 10px;
+        }
+
+        /* ===== 页脚 ===== */
+        .site-footer {
+            background-color: #1b4332;
+            color: #d8f3dc;
+            padding: 40px 0 0;
+            margin-top: 40px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 30px;
+            padding-bottom: 30px;
+        }
+        .footer-about p {
+            font-size: 14px;
+            margin-top: 12px;
+            opacity: 0.9;
+        }
+        .footer-links h4,
+        .footer-contact h4 {
+            font-size: 17px;
+            margin-bottom: 14px;
+            color: #fff;
+        }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        .footer-links a {
+            font-size: 14px;
+            opacity: 0.85;
+        }
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        .footer-contact p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 18px 0;
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        /* ===== 响应式 ===== */
+        @media (max-width: 992px) {
+            .quick-panel {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .env-cards,
+            .course-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .intro-grid,
+            .enroll-wrap {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .logo-text h1 {
+                font-size: 22px;
+            }
+            .hero-text h2 {
+                font-size: 28px;
+            }
+            .main-nav a {
+                padding: 12px 14px;
+                font-size: 14px;
+            }
+            .quick-panel {
+                grid-template-columns: 1fr;
+            }
+            .env-cards,
+            .course-list {
+                grid-template-columns: 1fr;
+            }
+            .hero-buttons a {
+                display: block;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .header-contact {
+                font-size: 12px;
+                padding: 6px 12px;
+                margin-top: 8px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+    <!-- 顶部信息条 -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="notice">📢 东昌路小学2025年秋季招生预登记工作即将启动</span>
+            <span>🏫 立德树人 · 全面发展</span>
+        </div>
+    </div>
+
+    <!-- 页眉 -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">东</div>
+                <div class="logo-text">
+                    <h1>东昌路小学</h1>
+                    <p>DONGCHANG ROAD PRIMARY SCHOOL</p>
+                </div>
+            </div>
+            <div class="header-contact">
+                <i>📞</i> 招生咨询：0531-8888 6666（工作日 8:30-17:00）
+            </div>
+        </div>
+    </header>
+
+    <!-- 导航 -->
+    <nav class="main-nav">
+        <div class="container">
+            <a href="#" class="active">首页</a>
+            <a href="#">学校概况</a>
+            <a href="#">校园动态</a>
+            <a href="#">教学教研</a>
+            <a href="#">德育之窗</a>
+            <a href="#">招生专栏</a>
+            <a href="#">家校互动</a>
+        </div>
+    </nav>
+
+    <!-- 首屏横幅 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="tagline">🌟 让每个孩子都闪光</span>
+                <h2>扎根东昌路 · 面向未来成长</h2>
+                <p>东昌路小学是一所环境优美、设施完善、师资优良的公办小学。学校秉持“明德、乐学、健体、尚美”的校训，致力于培养有理想、有本领、有担当的新时代少年。</p>
+                <div class="hero-buttons">
+                    <a href="#">查看招生简章</a>
+                    <a href="#" class="outline">预约校园开放日</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                ✨ 这里展示学校主教学楼或校园景观<br>（实景照片区域）
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速通道 -->
+    <div class="container">
+        <div class="quick-panel">
+            <div class="quick-card">
+                <div class="icon">📅</div>
+                <h3>招生政策</h3>
+                <p>了解入学条件与报名流程</p>
+            </div>
+            <div class="quick-card">
+                <div class="icon">🏫</div>
+                <h3>学区查询</h3>
+                <p>查看东昌路小学服务片区</p>
+            </div>
+            <div class="quick-card">
+                <div class="icon">📚</div>
+                <h3>课程体系</h3>
+                <p>国家课程 + 校本特色课程</p>
+            </div>
+            <div class="quick-card">
+                <div class="icon">👨‍👩‍👧</div>
+                <h3>家校共育</h3>
+                <p>家长课堂与沟通平台</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- 学校简介 -->
+        <section class="content-section">
+            <h2 class="section-title">学校简介</h2>
+            <p class="section-sub">一所老百姓家门口的优质学校</p>
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <p>东昌路小学坐落于城区核心地段，交通便利，周边社区成熟。学校创建以来，始终坚持社会主义办学方向，全面贯彻党的教育方针，落实立德树人根本任务，办学质量稳步提升，得到家长和社会广泛认可。</p>
+                    <p>学校现有教学班30余个，在校学生1400余人，教职员工近百人。其中高级教师、市区级骨干教师占比超过三分之一，教师队伍结构合理、业务精湛、充满活力。</p>
+                    <div class="intro-highlight">
+                        <strong>办学理念：</strong>以生为本，五育并举，为学生的终身发展奠基。<br>
+                        <strong>校训：</strong>明德 乐学 健体 尚美
+                    </div>
+                </div>
+                <div class="intro-stats">
+                    <div class="stat-item">
+                        <strong>30+</strong>
+                        <span>教学班</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>1400+</strong>
+                        <span>在校学生</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>95%</strong>
+                        <span>本科以上教师</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 校园环境与设施 -->
+        <section class="content-section">
+            <h2 class="section-title">校园环境与设施</h2>
+            <p class="section-sub">安全、舒适、现代化的学习成长空间</p>
+            <div class="env-cards">
+                <div class="env-card">
+                    <div class="emoji">🏫</div>
+                    <h3>教学楼与教室</h3>
+                    <p>所有教室均配备多媒体教学设备、空调及护眼照明。每层设有净水饮水机，保障学生日常饮水安全。</p>
+                </div>
+                <div class="env-card">
+                    <div class="emoji">📖</div>
+                    <h3>图书阅览室</h3>
+                    <p>馆藏图书三万余册，设有低年级绘本区、中高年级文学区及电子阅览区，每周开设阅读课。</p>
+                </div>
+                <div class="env-card">
+                    <div class="emoji">⚽</div>
+                    <h3>运动场地</h3>
+                    <p>拥有200米环形跑道、足球场、篮球场及室内体育教室，保障学生每天阳光体育活动一小时。</p>
+                </div>
+                <div class="env-card">
+                    <div class="emoji">🎨</div>
+                    <h3>艺术功能室</h3>
+                    <p>音乐教室、美术教室、书法教室、舞蹈房等专用教室齐全，满足多样化课程需求。</p>
+                </div>
+                <div class="env-card">
+                    <div class="emoji">🔬</div>
+                    <h3>科学实验室</h3>
+                    <p>按标准配备科学实验室及仪器器材，支持学生动手实践与探究创新。</p>
+                </div>
+                <div class="env-card">
+                    <div class="emoji">🛡️</div>
+                    <h3>安防与健康</h3>
+                    <p>校园监控全覆盖，配备专职保安及保健教师。定期开展安全演练与健康教育。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特色课程与活动 -->
+        <section class="content-section">
+            <h2 class="section-title">特色课程与校园活动</h2>
+            <p class="section-sub">五育并举，促进学生个性发展</p>
+            <div class="course-list">
+                <div class="course-item">
+                    <h4>📘 阅读工程</h4>
+                    <p>分年级推荐书目，开展“书香班级”“亲子共读”等活动，培养终身阅读习惯。</p>
+                </div>
+                <div class="course-item">
+                    <h4>🖋️ 书法教育</h4>
+                    <p>作为学校传统特色，每天设午间练字时间，聘请书法教师指导，弘扬汉字文化。</p>
+                </div>
+                <div class="course-item">
+                    <h4>🤖 科技创新</h4>
+                    <p>开设编程、机器人、科学小实验等社团，激发学生好奇心和探索欲。</p>
+                </div>
+                <div class="course-item">
+                    <h4>⚽ 阳光体育</h4>
+                    <p>足球、篮球、田径、跳绳等体育社团丰富，每年举办春季运动会和体育节。</p>
+                </div>
+                <div class="course-item">
+                    <h4>🎵 艺术素养</h4>
+                    <p>合唱团、口风琴、儿童画、剪纸等艺术课程，提升学生审美素养。</p>
+                </div>
+                <div class="course-item">
+                    <h4>🌱 劳动实践</h4>
+                    <p>校内劳动基地与家庭劳动任务相结合，培养学生劳动观念和动手能力。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 招生入学信息 -->
+        <section class="content-section">
+            <h2 class="section-title">招生与入学指南</h2>
+            <p class="section-sub">以当年教育主管部门公布政策为准，以下为参考信息</p>
+            <div class="enroll-wrap">
+                <div class="enroll-info">
+                    <h3>入学基本条件</h3>
+                    <ul>
+                        <li>年满6周岁的适龄儿童（以当年8月31日前出生为准）</li>
+                        <li>具有本校学区范围内常住户籍或符合政策要求的随迁子女</li>
+                        <li>房产、户籍与居住地一致者优先安排</li>
+                        <li>具体以当年区教育局招生文件为准</li>
+                    </ul>
+                    <div class="enroll-tips">
+                        <strong>💡 温馨提示：</strong> 每年的招生简章通常在6月发布，家长可关注学校公众号及校门口公告，按时参加线上信息采集和现场审核。
+                    </div>
+                </div>
+                <div class="enroll-info">
+                    <h3>招生流程参考</h3>
+                    <ul>
+                        <li>① 政策发布（6月上旬）</li>
+                        <li>② 网上信息登记（6月中旬）</li>
+                        <li>③ 学校材料审核（6月下旬）</li>
+                        <li>④ 录取通知（7月上旬）</li>
+                        <li>⑤ 新生报到及家长会（8月底）</li>
+                    </ul>
+                    <div class="enroll-tips">
+                        <strong>📞 招生咨询电话：</strong> 0531-8888 6666<br>
+                        <strong>📧 邮箱：</strong> dclxx@edu.example.cn
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section class="content-section">
+            <h2 class="section-title">家长常见问题</h2>
+            <p class="section-sub">我们整理了一些家长最关心的问题</p>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question">东昌路小学的学区范围包括哪些小区？</div>
+                    <div class="faq-answer">
+                        <p>学区划分每年由区教育局统一划定并公布。一般而言，学校周边主要居民区均属本校服务范围，具体请参考当年发布的学区示意图。您也可以致电学校招生办查询。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">一年级新生报名需要准备哪些材料？</div>
+                    <div class="faq-answer">
+                        <p>通常需要：户口簿、房产证（或不动产权证）、出生医学证明、儿童预防接种完成证明等。随迁子女还需提供居住证、务工证明等材料。具体清单以招生简章为准。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">学校是否提供课后延时服务？</div>
+                    <div class="faq-answer">
+                        <p>学校积极响应“双减”政策，提供课后延时服务，包括作业辅导和丰富的社团活动。家长可根据实际需求自愿报名，服务时间一般至17:30。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">非本地户籍儿童能否在东昌路小学就读？</div>
+                    <div class="faq-answer">
+                        <p>符合条件的随迁子女可按照当年政策申请入学。学校将依据学位情况，对材料齐全且符合积分入学条件的儿童进行录取，建议家长提前准备好相关证明。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">学校每天的上学、放学时间如何安排？</div>
+                    <div class="faq-answer">
+                        <p>一般早上8:20前到校，下午15:30左右放学（参加延时服务的学生至17:30）。具体作息时间会随季节微调，开学后班主任会详细通知。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3 style="font-size:20px; margin-bottom:6px;">东昌路小学</h3>
+                    <p>一所充满活力与温度的学校。我们坚持立德树人，关注每一个孩子的健康成长，努力办好人民满意的教育。</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">学校简介</a></li>
+                        <li><a href="#">教师风采</a></li>
+                        <li><a href="#">校园新闻</a></li>
+                        <li><a href="#">招生专栏</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系方式</h4>
+                    <p>📍 地址：东昌路66号（示例地址）</p>
+                    <p>📞 电话：0531-8888 6666</p>
+                    <p>📧 邮箱：dclxx@edu.example.cn</p>
+                    <p>🕒 工作日：8:00 - 17:00</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 东昌路小学 版权所有 | 鲁ICP备XXXXXXXX号
+            </div>
+        </div>
+    </footer>
+
+    <!-- 简单FAQ交互 -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(function(q) {
+            q.addEventListener('click', function() {
+                var item = this.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+                                                                                                     </html>
