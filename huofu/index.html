@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活肤金蛋白-专业护肤成分解析与使用指南</title>
+    <meta name="description" content="活肤金蛋白护肤成分深度解析，了解其作用原理、适用肤质、使用方法、注意事项以及常见问题解答，科学护肤从认识成分开始。">
+    <meta name="keywords" content="活肤金蛋白,护肤成分,金蛋白,抗皱紧致,皮肤护理,护肤指南,成分解析">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #faf7f2;
+            color: #3e3a36;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* header */
+        .site-header {
+            background: linear-gradient(135deg, #f5ede4 0%, #ffffff 100%);
+            border-bottom: 1px solid #e8ddd0;
+            padding: 18px 0;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: radial-gradient(circle at 30% 30%, #f9e2b7, #c8a87c);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(184,142,84,0.2);
+        }
+        .logo-text {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #5a4232;
+        }
+        .logo-text span {
+            color: #b8865a;
+            font-weight: 300;
+        }
+        .header-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .header-nav a {
+            text-decoration: none;
+            color: #5a4a3a;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+        .header-nav a:hover {
+            color: #b07a4f;
+            border-bottom-color: #c8a87c;
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(140deg, #f2e8dc 0%, #fdfbf7 50%, #f0e3d3 100%);
+            padding: 70px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(200,168,124,0.08) 0%, transparent 70%);
+            top: -100px;
+            right: -80px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .hero-copy h1 {
+            font-size: 44px;
+            font-weight: 700;
+            color: #4a3628;
+            line-height: 1.25;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .hero-copy h1 .gold {
+            color: #b8865a;
+            font-weight: 700;
+            position: relative;
+        }
+        .hero-copy p {
+            font-size: 17px;
+            color: #6b5e52;
+            margin-bottom: 30px;
+            max-width: 560px;
+        }
+        .hero-badges {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .badge-item {
+            background: #fff;
+            border-radius: 40px;
+            padding: 8px 20px;
+            font-size: 14px;
+            color: #7a5c3e;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e8ddd0;
+        }
+        .hero-visual {
+            background: #fff;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 20px 40px rgba(90, 66, 50, 0.08);
+            border: 1px solid #eee3d6;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-visual .visual-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #6b4a32;
+            margin-bottom: 12px;
+        }
+        .hero-visual .visual-sub {
+            font-size: 14px;
+            color: #9a8a7c;
+            margin-bottom: 24px;
+        }
+        .visual-structure {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+        .structure-atom {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: #f6ede2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: #6b5e52;
+            border: 2px solid #e0cdb7;
+        }
+        .structure-atom.gold-core {
+            background: linear-gradient(145deg, #fae8c8, #d4b48a);
+            border-color: #c8a87c;
+            width: 80px;
+            height: 80px;
+            font-weight: 600;
+            color: #4a3628;
+        }
+        .visual-note {
+            font-size: 13px;
+            color: #8a7a6a;
+            background: #faf5ee;
+            border-radius: 16px;
+            padding: 14px 18px;
+            line-height: 1.5;
+        }
+
+        /* section common */
+        .section {
+            padding: 64px 0;
+        }
+        .section-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #4a3628;
+            margin-bottom: 16px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: #c8a87c;
+            border-radius: 4px;
+        }
+        .section-desc {
+            color: #7a6c5f;
+            font-size: 16px;
+            margin-bottom: 40px;
+            max-width: 720px;
+        }
+        .section-center {
+            text-align: center;
+        }
+        .section-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .section-center .section-desc {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* about */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .about-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 36px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.04);
+            border: 1px solid #eee3d6;
+        }
+        .about-card h3 {
+            font-size: 22px;
+            color: #5a4232;
+            margin-bottom: 14px;
+        }
+        .about-card p {
+            color: #6b5e52;
+            margin-bottom: 16px;
+        }
+        .feature-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+        .feature-list li {
+            padding: 8px 0 8px 28px;
+            position: relative;
+            color: #5a4a3a;
+            border-bottom: 1px dashed #eee3d6;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: #b8865a;
+            font-size: 14px;
+        }
+        .ingredient-detail {
+            background: #faf5ee;
+            border-radius: 20px;
+            padding: 30px;
+            border-left: 4px solid #c8a87c;
+        }
+        .ingredient-detail h4 {
+            color: #6b4a32;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+        .ingredient-detail p {
+            color: #6b5e52;
+            font-size: 15px;
+        }
+
+        /* steps */
+        .steps-bg {
+            background: #f3ece2;
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .step-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 28px 20px;
+            text-align: center;
+            border: 1px solid #e8ddd0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .step-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+        }
+        .step-num {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #e8d5bf;
+            color: #5a4232;
+            font-weight: 700;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+        .step-card h3 {
+            font-size: 17px;
+            color: #4a3628;
+            margin-bottom: 10px;
+        }
+        .step-card p {
+            font-size: 14px;
+            color: #7a6c5f;
+            line-height: 1.6;
+        }
+
+        /* types */
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .type-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 28px;
+            border: 1px solid #eee3d6;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+        }
+        .type-card h3 {
+            font-size: 18px;
+            color: #5a4232;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0e3d3;
+        }
+        .type-card p {
+            color: #6b5e52;
+            font-size: 15px;
+        }
+        .type-tag {
+            display: inline-block;
+            background: #f3ece2;
+            color: #8a6a4a;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* faq */
+        .faq-bg {
+            background: #f8f3ec;
+        }
+        .faq-list {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            border: 1px solid #e8ddd0;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px 28px;
+            font-weight: 600;
+            color: #4a3628;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            transition: background 0.2s;
+        }
+        .faq-question:hover {
+            background: #faf5ee;
+        }
+        .faq-icon {
+            color: #b8865a;
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .faq-answer {
+            padding: 0 28px 20px;
+            color: #6b5e52;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* cta */
+        .cta-section {
+            background: linear-gradient(135deg, #e5d3c0, #f2e6d8);
+            padding: 50px 0;
+        }
+        .cta-box {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .cta-box h2 {
+            color: #4a3628;
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+        .cta-box p {
+            color: #6b5e52;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #8a6a4a;
+            color: #fff;
+            padding: 12px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #6b4a32;
+            transform: translateY(-2px);
+        }
+
+        /* footer */
+        .site-footer {
+            background: #3a2e24;
+            color: #cbb9a8;
+            padding: 40px 0 24px;
+            font-size: 14px;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-brand h3 {
+            color: #f0e3d3;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 40px;
+        }
+        .footer-links h4 {
+            color: #e8d5bf;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .footer-links a {
+            display: block;
+            color: #b7a392;
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: #e8d5bf;
+        }
+        .footer-bottom {
+            border-top: 1px solid #4a3e32;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #9a8a7c;
+        }
+
+        /* responsive */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .hero-copy {
+                text-align: center;
+            }
+            .hero-copy p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-badges {
+                justify-content: center;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .types-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .header-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+            }
+            .hero-copy h1 {
+                font-size: 32px;
+            }
+            .section {
+                padding: 48px 0;
+            }
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+            .types-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-top {
+                flex-direction: column;
+            }
+            .footer-links {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .hero {
+                padding: 48px 0;
+            }
+            .hero-copy h1 {
+                font-size: 28px;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+            .visual-structure {
+                gap: 8px;
+            }
+            .structure-atom, .structure-atom.gold-core {
+                width: 56px;
+                height: 56px;
+                font-size: 10px;
+            }
+            .structure-atom.gold-core {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">✦</div>
+                <div class="logo-text">活肤<span>金蛋白</span></div>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#about">成分解析</a></li>
+                    <li><a href="#steps">使用步骤</a></li>
+                    <li><a href="#types">产品类型</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>活肤金蛋白<br><span class="gold">焕活肌肤</span> 的黄金密码</h1>
+                    <p>深入认识“活肤金蛋白”这一护肤成分，了解它在紧致、滋养与焕肤方面的作用原理，以及如何根据肤质科学选用相关产品。</p>
+                    <div class="hero-badges">
+                        <span class="badge-item">✦ 紧致弹润</span>
+                        <span class="badge-item">✦ 温和滋养</span>
+                        <span class="badge-item">✦ 科学护肤</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-title">成分结构示意</div>
+                    <div class="visual-sub">活肤因子 + 金蛋白复合物</div>
+                    <div class="visual-structure">
+                        <div class="structure-atom">氨基酸<br>肽链</div>
+                        <div class="structure-atom gold-core">金蛋白<br>核心</div>
+                        <div class="structure-atom">保湿<br>因子</div>
+                    </div>
+                    <div class="visual-note">协同作用于皮肤表层与基底层，帮助维持肌肤弹性与水润感。</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-center">
+                    <h2 class="section-title">什么是活肤金蛋白</h2>
+                    <p class="section-desc">活肤金蛋白并非单一物质，而是一类强调“活肤”与“蛋白滋养”的护肤成分组合概念，通常出现在精华、面霜与安瓶产品中。</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>核心成分特点</h3>
+                        <ul class="feature-list">
+                            <li>蕴含小分子蛋白肽类成分，易于渗透</li>
+                            <li>搭配保湿因子，增强肌肤水合力</li>
+                            <li>强调温和焕肤，避免过度刺激</li>
+                            <li>适合因干燥、熬夜引起的初老肌肤</li>
+                            <li>质地轻盈，后续叠加产品不易搓泥</li>
+                        </ul>
+                        <p style="margin-top: 16px; font-size: 14px;">不同品牌对“活肤金蛋白”的配方定义略有差异，选购时建议关注全成分表。</p>
+                    </div>
+                    <div class="ingredient-detail">
+                        <h4>作用方向解析</h4>
+                        <p>从护肤逻辑来看，此类成分主要围绕<b>保湿</b>、<b>紧致</b>和<b>提亮</b>三个维度发挥作用。小分子蛋白肽为肌肤提供“类蛋白”营养支持，有助于维持肌肤饱满感；搭配的保湿成分则减少经皮水分流失，让皮肤纹理更细腻。</p>
+                        <p style="margin-top: 12px;"><b>适用肤质：</b>中性、干性及混合性肌肤较为常见，油性肌肤建议选择清爽配方。敏感肌使用前建议先做局部测试。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps -->
+        <section class="section steps-bg" id="steps">
+            <div class="container">
+                <div class="section-center">
+                    <h2 class="section-title">科学使用步骤</h2>
+                    <p class="section-desc">正确使用含活肤金蛋白的护肤品，才能让有效成分更好发挥作用。</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>温和清洁</h3>
+                        <p>使用氨基酸类洁面，避免过度去脂。清洁后轻拍至半干，帮助后续吸收。</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>爽肤打底</h3>
+                        <p>使用基础保湿水或喷雾，打通肌肤吸收通道，使角质层保持水润状态。</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3>精华/面霜</h3>
+                        <p>取适量含活肤金蛋白的产品，由内向外轻柔按压。避开眼周，颈部也可顺带涂抹。</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">4</div>
+                        <h3>锁水防护</h3>
+                        <p>根据肤质叠加保湿乳或面霜。白天务必使用防晒，减少紫外线对胶原的损伤。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- types -->
+        <section class="section" id="types">
+            <div class="container">
+                <div class="section-center">
+                    <h2 class="section-title">常见产品类型</h2>
+                    <p class="section-desc">根据质地与使用场景，市面上的活肤金蛋白产品可以大致分为以下几类。</p>
+                </div>
+                <div class="types-grid">
+                    <div class="type-card">
+                        <span class="type-tag">精华液</span>
+                        <h3>高浓度精华</h3>
+                        <p>活性成分含量相对较高，通常用于洁面后、面霜前。建议从低频率开始建立耐受，例如隔天晚间使用。</p>
+                    </div>
+                    <div class="type-card">
+                        <span class="type-tag">面霜</span>
+                        <h3>滋养面霜</h3>
+                        <p>质地较丰润，适合干性及熟龄肌肤，在秋冬干燥季节能提供更好的封闭保湿力。</p>
+                    </div>
+                    <div class="type-card">
+                        <span class="type-tag">安瓶</span>
+                        <h3>密集护理</h3>
+                        <p>小剂量高活性包装，适合在皮肤状态不佳或重要活动前进行短期密集修护，周期建议遵产品说明。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faq -->
+        <section class="section faq-bg" id="faq">
+            <div class="container">
+                <div class="section-center">
+                    <h2 class="section-title">常见问题解答</h2>
+                    <p class="section-desc">关于活肤金蛋白，你可能还想了解这些。</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">活肤金蛋白适合敏感肌吗？<span class="faq-icon">+</span></div>
+                        <div class="faq-answer">取决于具体配方。敏感肌应优先选择无香精、无酒精且含有舒缓成分（如积雪草、泛醇）的产品。首次使用前，在耳后或手腕内侧进行48小时局部测试更为稳妥。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">可以和其他功效成分叠加吗？<span class="faq-icon">+</span></div>
+                        <div class="faq-answer">通常可以。但若同时使用高浓度酸类或A醇，建议错开早晚使用，避免过度叠加造成刺激。遵循“先保湿、后功效”的顺序原则。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">使用多久能看到效果？<span class="faq-icon">+</span></div>
+                        <div class="faq-answer">护肤效果因人而异。皮肤代谢周期约为28天，坚持使用4-8周可能观察到肤质细腻度与光泽度的改善。紧致效果需要更长期维护。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">白天可以用吗？<span class="faq-icon">+</span></div>
+                        <div class="faq-answer">可以。但无论使用何种护肤成分，白天都建议配合足量防晒。部分蛋白肽类成分在紫外线照射下稳定性可能下降，因此严格防晒是必须的。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cta -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>开启科学护肤之旅</h2>
+                    <p>了解成分，理性选择。让每一滴护肤品都物有所值。</p>
+                    <a href="#about" class="btn">了解更多成分知识</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>活肤金蛋白</h3>
+                    <p style="max-width: 260px;">专注于护肤成分科普与使用指导，帮助每一位爱美人士做出明智选择。</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>内容导航</h4>
+                        <a href="#about">成分解析</a>
+                        <a href="#steps">使用步骤</a>
+                        <a href="#types">产品类型</a>
+                    </div>
+                    <div>
+                        <h4>护肤知识</h4>
+                        <a href="#faq">常见问题</a>
+                        <a href="#about">作用原理</a>
+                        <a href="#steps">搭配建议</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 活肤金蛋白护肤指南 · 本页面内容仅供科普参考，不构成医疗建议</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 交互
+        document.querySelectorAll('.faq-question').forEach(function(question) {
+            question.addEventListener('click', function() {
+                var answer = this.nextElementSibling;
+                var icon = this.querySelector('.faq-icon');
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    answer.style.display = 'block';
+                    icon.textContent = '−';
+                }
+            });
+        });
+        // 默认展开第一个FAQ
+        var firstAnswer = document.querySelector('.faq-answer');
+        if (firstAnswer) {
+            firstAnswer.style.display = 'block';
+            document.querySelector('.faq-icon').textContent = '−';
+        }
+    </script>
+</body>
+</html>
